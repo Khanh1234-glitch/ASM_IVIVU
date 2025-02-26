@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../../css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            body {
+                background-color: #ecf0f5;
+            }
+            form {
+                width: 410px;
+                height: auto;
+                margin: 100px 0;
+                background-color: white;
+                padding: 20px;
+                font-size: 14px;
+                color: #3f3b3b;
+                line-height: 22.4px;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            }
+            form h1 {
+                color: #003c71;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 33.6px;
+            }
+            form input {
+                background-color: #fff;
+                border-color: #c8c9d0;
+                border-radius: 4px;
+                border-style: solid;
+                border-width: 0.8px;
+                width: 100%;
+                box-shadow: #0000 0px 0px 0px 0px;
+                display: inline-block;
+                line-height: 22.8571px;
+                padding: 17px 16px;
+                margin: 10px 0;
+                transition: all 0.5s;
+            }
+            form input:hover {
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, #7cd0ff 0px -12px 30px, #7cd0ff 0px 4px 6px, #7cd0ff 0px 12px 13px,
+                    #7cd0ff 0px -3px 5px;
+            }
+            form input:focus {
+                background-color: #fff;
+                box-shadow: #7cd0ff 0px 54px 55px, #7cd0ff 0px -12px 30px, #7cd0ff 0px 4px 6px, #7cd0ff 0px 12px 13px, #7cd0ff 0px -3px 5px;
+            }
+            form .btn-signIn button {
+                background-color: #f79321;
+                border-color: #f79321;
+                border-radius: 4px;
+                border-style: solid;
+                border-width: 0.8px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 28.5714px;
+                padding: 13px 16px;
+                cursor: pointer;
+                text-align: center;
+                width: 100%;
+            }
+            .form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+            }
+            .line-form {
+                position: relative;
+                background-color: white;
+            }
+            .line {
+                width: 100%;
+                height: 1px;
+                background-color: #d9d9d9;
+                margin: 20px 0;
+            }
+            .lineP {
+                position: absolute;
+                top: -12px;
+                left: calc(50% - 20px);
+                bottom: 0;
+                right: 0;
+            }
+            .lineP p {
+                background-color: white;
+                color: #828282;
+                padding: 0 10px;
+                width: 30%;
+            }
+            .btn-social {
+                display: flex;
+                justify-content: center;
+                gap: normal 12px;
+            }
+            .btn-social button {
+                align-items: center;
+                background-color: #fff;
+                border-color: #bdbdbd;
+                border-radius: 4px;
+                border-style: solid;
+                border-width: 0.8px;
+                display: flex;
+                width: 100%;
+                height: 50px;
+                gap: normal 12px;
+                font-size: 14px;
+                cursor: pointer;
+                justify-content: center;
+                line-height: 20px;
+                padding: 1px 6px;
+                text-align: center;
+                transition: all 0.5s;
+            }
+            .btn-social button:hover {
+                background-color: #edfbff;
+                border-color: #7cd0ff;
+            }
+            .btn-social button i {
+                color: blue;
+                font-size: 22px;
+            }
+            .forgot_pw {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- header -->
+        <header>
+            <div class="menu">
+                <div class="container">
+                    <div class="header_menu">
+                        <div class="left">
+                            <a href="../Home.html"><img src="https://res.ivivu.com/hotel/img/logo.svg" alt="" /></a>
+                            <ul>
+                                <li><a href="#">Khách sạn</a></li>
+                                <li><a href="#">Tours</a></li>
+                                <li><a href="#">Vé máy bay</a></li>
+                                <li><a href="#">Vé vui chơi</a></li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a href="#">Cẩm nang du lịch</a>
+                                            <a href="#">Bespoke</a>
+                                            <a href="#">Giới thiệu</a>
+                                            <a href="#">Hỏi đáp</a>
+                                            <a href="#">Hỗ trợ</a>
+                                        </div>
+                                    </details>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="avatar">
+                                <div>
+                                    <details>
+                                        <summary>
+                                            <i class="fa-solid fa-user-ninja"></i>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <div class="sign-in">
+                                                <button>
+                                                    <a style="color: white; text-decoration: none" href="./signUp.html">Đăng kí</a>
+                                                </button>
+                                                <p>Quý khách đã có tài khoản?</p>
+                                                <a href="#">Đăng nhập ngay</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="phone"><i class="fa-solid fa-phone"></i> 1900 1870</div>
+                                <details>
+                                    <summary>
+                                        <span class="time"><i class="fa-solid fa-clock"></i>7h30<i class="fa-solid fa-arrow-right"></i>21h</span>
+                                        <span class="location"><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh</span>
+                                    </summary>
+                                    <div class="dropdown-menu">
+                                        <a href="">Hồ Chí Minh</a>
+                                        <a href="">Hà Nội</a>
+                                        <a href="">Đà Nẵng</a>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <div class="container form">
+            <form>
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px" class="header-form">
+                    <a style="color: black" href="./signIn.html"><i style="cursor: pointer" class="fa-solid fa-arrow-left"></i></a>
+                    <h1 style="text-align: center">Đăng nhập với OTP</h1>
+                    <p></p>
+                </div>
+                <p style="font-size: 16px; color: #828282; margin: 15px 0">Vui lòng nhập email Quý khách đã đăng ký với iVIVU</p>
+                <p>Email / Số điện thoại di động</p>
+                <input type="email" />
+
+                <div class="btn-signIn">
+                    <button>Tiếp tục</button>
+                </div>
+                <div class="line-form">
+                    <div class="line"></div>
+                    <div class="lineP">
+                        <p>Hoặc</p>
+                    </div>
+                </div>
+                <div class="btn-social">
+                    <button><i class="fa-brands fa-facebook"></i>Facebook</button>
+                    <button><i class="fa-brands fa-google"></i>Google</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

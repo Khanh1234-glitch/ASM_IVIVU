@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./airlineTicket.css" />
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <div class="container">
+                    <div class="header_menu">
+                        <div class="left">
+                            <a href="../Home.html"><img src="https://res.ivivu.com/hotel/img/logo.svg" alt="" /></a>
+
+                            <ul>
+                                <li><a href="#">Khách sạn</a></li>
+                                <li><a href="#">Tours</a></li>
+                                <li><a href="#">Vé máy bay</a></li>
+                                <li><a href="#">Vé vui chơi</a></li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a href="#">Cẩm nang du lịch</a>
+                                            <a href="#">Bespoke</a>
+                                            <a href="#">Giới thiệu</a>
+                                            <a href="#">Hỏi đáp</a>
+                                            <a href="#">Hỗ trợ</a>
+                                        </div>
+                                    </details>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="avatar">
+                                <div>
+                                    <details>
+                                        <summary>
+                                            <i class="fa-solid fa-user-ninja"></i>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <div class="sign-in">
+                                                <button>
+                                                    <a style="color: white; text-decoration: none" href="../auth/signUp.html">Đăng kí</a>
+                                                </button>
+                                                <p>Quý khách đã có tài khoản?</p>
+                                                <a href="../auth/signUp.html">Đăng nhập ngay</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="phone"><i class="fa-solid fa-phone"></i> 1900 1870</div>
+                                <details>
+                                    <summary>
+                                        <span class="time"><i class="fa-solid fa-clock"></i>7h30<i class="fa-solid fa-arrow-right"></i>21h</span>
+                                        <span class="location"><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh</span>
+                                    </summary>
+                                    <div class="dropdown-menu">
+                                        <a href="">Hồ Chí Minh</a>
+                                        <a href="">Hà Nội</a>
+                                        <a href="">Đà Nẵng</a>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="img"><img src="https://cdn1.ivivu.com/images/2025/02/21/08/banner-t-20250218_.webp" alt="" /></div>
+                <div class="container">
+                    <div class="box">
+                        <h1>Đặt vé máy bay giá rẻ</h1>
+                        <p>Xuất vé siêu nhanh - Hỗ trợ tận tâm, dịch vụ chuyên nghiệp</p>
+                        <div class="booking-search">
+                            <div class="booking-container">
+                                <div class="trip-options">
+                                    <label> <input type="radio" name="trip" checked /> Khứ hồi </label>
+                                    <label> <input type="radio" name="trip" /> Một chiều </label>
+                                </div>
+
+                                <div class="booking-form">
+                                    <div class="form-group">
+                                        <label>Từ</label>
+                                        <div class="input-box">
+                                            <span class="icon">✈️</span>
+                                            <span>Hồ Chí Minh (SGN)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Đến</label>
+                                        <div class="input-box">
+                                            <span class="icon">✈️</span>
+                                            <span>Hà Nội (HAN)</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Hành khách</label>
+                                        <div style="display: flex; gap: 10px">
+                                            <div class="input-box">
+                                                <div class="div" style="display: flex; justify-content: center; align-items: center">
+                                                    <span class="icon">👤</span>
+                                                    <div class="text">
+                                                        <span style="display: block">1 khách</span>
+                                                        <small>1 người lớn, 0 trẻ em, 0 em bé</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Ngày đi</label>
+                                        <div class="input-box">
+                                            <span class="icon">📅</span>
+                                            <span>25 tháng 02</span>
+                                            <small>Thứ ba</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Ngày về</label>
+                                        <div class="input-box">
+                                            <span class="icon">📅</span>
+                                            <span>26 tháng 02</span>
+                                            <small>Thứ tư</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button class="search-button">Tìm chuyến bay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <!-- Phần Thống Kê -->
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span>🌟 Hơn 1 triệu vé đã bán</span>
+                    <p>Vé nội địa và quốc tế, giá tốt nhất</p>
+                </div>
+                <div class="stat-item">
+                    <span>😊 93% khách cực kì hài lòng</span>
+                    <p>Trải nghiệm dịch vụ đáng tin cậy</p>
+                </div>
+                <div class="stat-item">
+                    <span>💙 Luôn sẵn sàng hỗ trợ</span>
+                    <p>Phản hồi trong 15 phút qua điện thoại, Zalo</p>
+                </div>
+            </div>
+            <!-- Tiêu đề -->
+            <div class="title-container">
+                <h2>Vé máy bay nội địa ưu đãi nhất</h2>
+                <p>Giá vé siêu tiết kiệm từ Vietnam Airlines, Bamboo Airways, Vietjet, Vietravel Airlines</p>
+            </div>
+            <!-- Danh sách vé -->
+            <div class="ticket-container">
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Quy Nhơn</strong></p>
+                            <p>08 thg 04 - 10 thg 04</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietravelAirlines.webp" alt="Vietnam Airlines" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.520.600 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Lạt</strong></p>
+                            <p>05 thg 03 - 07 thg 03</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.577.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Nẵng</strong></p>
+                            <p>12 thg 05 - 14 thg 05</p>
+                        </div>
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Phú Quốc</strong></p>
+                            <p>01 thg 04 - 03 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hà Nội ⇌ Nha Trang</strong></p>
+                            <p>14 thg 04 - 16 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>2.225.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Côn Đảo</strong></p>
+                            <p>23 thg 03 - 25 thg 03</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietnamAirlines.webp" alt="Vietnam Airlines" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>3.604.000 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Khuyến mãi và ưu đãi -->
+            <div class="promotion">
+                <h2>Khuyến mãi và ưu đãi</h2>
+                <p>Tận hưởng ưu đãi – Trải nghiệm thoải mái</p>
+                <div class="slider">
+                    <!-- Input radio để kiểm soát slide -->
+                    <input type="radio" name="slider" id="slide1" checked />
+                    <input type="radio" name="slider" id="slide2" />
+                    <input type="radio" name="slider" id="slide3" />
+
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="https://cdn1.ivivu.com/images/2025/02/21/08/banner-sd-20250218_.webp" alt="Slide 1" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://cdn1.ivivu.com/images/2025/01/17/15/Slide_Banner-Duong-bay-thang_1701_.webp" alt="Slide 2" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://cdn1.ivivu.com/images/2025/01/24/18/Op2Slide_DaNang-Bangkok_2401_.webp" alt="Slide 3" />
+                        </div>
+                    </div>
+
+                    <!-- Dots điều hướng -->
+                    <div class="navigation">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                    </div>
+                </div>
+            </div>
+            <!-- Giá vé tốt nhất -->
+            <div class="best-price">
+                <h2 style="font-size: 35px">Giá vé tốt nhất</h2>
+                <p>Giá vé cạnh tranh từ các hãng bay quốc tế uy tín như Vietnam Airlines, Singapore Airlines và EVA Air</p>
+            </div>
+            <!-- Đông Nam Á -->
+            <h3 style="font-size: 32px; margin: 20px 0; font-weight: 400; line-height: 1.1; color: inherit">Đông Nam Á</h3>
+            <div class="ticket-container">
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Quy Nhơn</strong></p>
+                            <p>08 thg 04 - 10 thg 04</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietravelAirlines.webp" alt="Vietnam Airlines" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.520.600 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Lạt</strong></p>
+                            <p>05 thg 03 - 07 thg 03</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.577.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Nẵng</strong></p>
+                            <p>12 thg 05 - 14 thg 05</p>
+                        </div>
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Phú Quốc</strong></p>
+                            <p>01 thg 04 - 03 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hà Nội ⇌ Nha Trang</strong></p>
+                            <p>14 thg 04 - 16 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>2.225.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Côn Đảo</strong></p>
+                            <p>23 thg 03 - 25 thg 03</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietnamAirlines.webp" alt="Vietnam Airlines" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>3.604.000 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Đông Bắc Á Trung Á -->
+            <h3 style="font-size: 32px; margin: 20px 0; font-weight: 400; line-height: 1.1; color: inherit">Đông Bắc Á Trung Á</h3>
+            <div class="ticket-container">
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Quy Nhơn</strong></p>
+                            <p>08 thg 04 - 10 thg 04</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietravelAirlines.webp" alt="Vietnam Airlines" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.520.600 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Lạt</strong></p>
+                            <p>05 thg 03 - 07 thg 03</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.577.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Nẵng</strong></p>
+                            <p>12 thg 05 - 14 thg 05</p>
+                        </div>
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Phú Quốc</strong></p>
+                            <p>01 thg 04 - 03 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hà Nội ⇌ Nha Trang</strong></p>
+                            <p>14 thg 04 - 16 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>2.225.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Côn Đảo</strong></p>
+                            <p>23 thg 03 - 25 thg 03</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietnamAirlines.webp" alt="Vietnam Airlines" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>3.604.000 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Châu Âu, Châu Mỹ, Châu Úc và Châu Phi -->
+            <h3 style="font-size: 32px; margin: 20px 0; font-weight: 400; line-height: 1.1; color: inherit">Châu Âu, Châu Mỹ, Châu Úc và Châu Phi</h3>
+            <div class="ticket-container">
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Quy Nhơn</strong></p>
+                            <p>08 thg 04 - 10 thg 04</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietravelAirlines.webp" alt="Vietnam Airlines" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.520.600 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Lạt</strong></p>
+                            <p>05 thg 03 - 07 thg 03</p>
+                        </div>
+                        <div class="logo">
+                            <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                        </div>
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.577.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Đà Nẵng</strong></p>
+                            <p>12 thg 05 - 14 thg 05</p>
+                        </div>
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Phú Quốc</strong></p>
+                            <p>01 thg 04 - 03 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>1.793.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hà Nội ⇌ Nha Trang</strong></p>
+                            <p>14 thg 04 - 16 thg 04</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietJetAir.webp" alt="Vietjet" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>2.225.200 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+
+                <div class="ticket-card">
+                    <div class="ticket-info">
+                        <div class="text">
+                            <p><strong>Hồ Chí Minh ⇌ Côn Đảo</strong></p>
+                            <p>23 thg 03 - 25 thg 03</p>
+                        </div>
+
+                        <img src="https://res.ivivu.com/flight/inbound/images/compact/VietnamAirlines.webp" alt="Vietnam Airlines" />
+                    </div>
+                    <div class="ticket-price">
+                        <span>3.604.000 VND</span>
+                        <button class="view-button">Xem</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="top">
+                    <div class="for_me">
+                        <strong>Về iVIVU.com </strong>
+                        <a href="#">Về chúng tôi</a>
+                        <a href="#">iVIVU Blog</a>
+                        <a href="#">PMS - Miễn phí</a>
+                    </div>
+                    <div class="info_need_know">
+                        <strong> Thông tin cần biết </strong>
+                        <a href="#">Điều kiện & Điều khoản</a>
+                        <a href="#">Quy chế hoạt động</a>
+                        <a href="#">Câu hỏi thường gặp</a>
+                    </div>
+                    <div class="partner">
+                        <strong>Đối tác của chúng tôi</strong>
+                        <a href="../../page/insurance/insurance_home.html">Quy chế bảo hiểm Cathay</a>
+                        <a href="../../page/insurance/insurance_home.html">Yêu cầu bồi thường Cathay</a>
+                        <a href="../../page/insurance/insurance_home.html">Quy chế trả góp</a>
+                    </div>
+                    <div class="member">
+                        <div>
+                            <p>Thành viên của</p>
+                            <strong>Thiên Minh Group</strong>
+                        </div>
+                        <a target="_blank" href="https://tmgroup.vn/"><img src="../../img/tmg_logo.webp" alt="" /></a>
+                    </div>
+                    <div class="certificate">
+                        <div>
+                            <strong>Được chứng nhận</strong>
+                        </div>
+                        <div style="display: flex; gap: 10px">
+                            <a target="_blank" href="http://online.gov.vn/Home/WebDetails/21863"><img src="../../img/bocongthuong.png" alt="" /></a>
+                            <a href="#"><img src="../../img/iata_logo.webp" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="left">
+                        <div class="prize">
+                            <div class="box-footer">
+                                <div class="logo"><img src="../../img/ivv-agency-winner.svg" alt="" /></div>
+                                <div class="text">
+                                    <a target="_blank" href="https://www.worldtravelawards.com/profile-38227-ivivucom"
+                                        >Đại lý Du lịch trực tuyến hàng đầu Việt Nam</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="box-footer">
+                                <div class="logo"><img src="../../img/hraa-logo.png" alt="" /></div>
+                                <div class="text">
+                                    <a
+                                        target="_blank"
+                                        href="https://hr.asia/hr-asia-best-companies-to-work-for-in-asia/vietnam-employers-remain-committed-to-employee-engagement/"
+                                        >Nơi làm việc tốt nhất Châu Á</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="box-footer">
+                                <div class="logo"><img src="../../img/apea.png" alt="" /></div>
+                                <div class="text">
+                                    <a target="_blank" href="https://apea.asia/vietnam/hall-of-fame-vn-2022/">Thương hiệu truyền cảm hứng APEA</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p>DKKD: 0312788481, Ngày cấp: 21/05/2014, Sở kế hoạch đầu tư thành phố Hồ Chí Minh</p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i><strong>HCM</strong>: Tầng 2, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7,
+                            Quận 3, Tp. Hồ Chí Minh
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i><strong>HN</strong>: P308, Tầng 3, tòa nhà The One, số 2 Chương Dương Độ, P.Chương
+                            Dương, Q.Hoàn Kiếm, Hà Nội
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i><strong>Cần Thơ</strong>: Tầng 7 - Tòa nhà STS - 11B Đại Lộ Hòa Bình, P. Tân An,
+                            Q. Ninh Kiều, TP. Cần Thơ
+                        </p>
+                    </div>
+                    <div class="right">
+                        <strong>Bạn cần trợ giúp? Hãy gọi ngay! </strong>
+
+                        <div class="phone">
+                            <a href="#"><i class="fa-solid fa-phone"></i> 1900 1870</a>
+                        </div>
+                        <div><a href="#" class="advise">Tư vấn với Olivia - chatbot của iVIVU</a></div>
+                        <strong>Đặt phòng dễ dàng hơn qua ứng dụng iVIVU </strong>
+                        <div class="download">
+                            <div class="qr_code">
+                                <img src="../../img/iVIVUcode.png" alt="" />
+                            </div>
+                            <div class="application">
+                                <img src="../../img/tai-appstore.png" alt="" />
+                                <img src="../../img/tai-google-play.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

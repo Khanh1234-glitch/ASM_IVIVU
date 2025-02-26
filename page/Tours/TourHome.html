@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./TourHome.css" />
+        <style></style>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <div class="menu">
+                <div class="container">
+                    <div class="header_menu">
+                        <div class="left">
+                            <a href="../Home.html"><img src="https://res.ivivu.com/hotel/img/logo.svg" alt="" /></a>
+
+                            <ul>
+                                <li><a href="#">Khách sạn</a></li>
+                                <li><a href="./TourHome.html">Tours</a></li>
+                                <li><a href="../airlineTicket/airlineTicket.html">Vé máy bay</a></li>
+                                <li><a href="#">Vé vui chơi</a></li>
+                                <li>
+                                    <details>
+                                        <summary>
+                                            <i class="fa-solid fa-ellipsis"></i>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <a href="#">Cẩm nang du lịch</a>
+                                            <a href="#">Bespoke</a>
+                                            <a href="#">Giới thiệu</a>
+                                            <a href="#">Hỏi đáp</a>
+                                            <a href="#">Hỗ trợ</a>
+                                        </div>
+                                    </details>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <div class="avatar">
+                                <div>
+                                    <details>
+                                        <summary>
+                                            <i class="fa-solid fa-user-ninja"></i>
+                                        </summary>
+                                        <div class="dropdown-menu">
+                                            <div class="sign-in">
+                                                <button>
+                                                    <a style="color: white; text-decoration: none" href="../auth/signUp.html">Đăng kí</a>
+                                                </button>
+                                                <p>Quý khách đã có tài khoản?</p>
+                                                <a href="../auth/signUp.html">Đăng nhập ngay</a>
+                                            </div>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                            <div class="contact">
+                                <div class="phone"><i class="fa-solid fa-phone"></i> 1900 1870</div>
+                                <details>
+                                    <summary>
+                                        <span class="time"><i class="fa-solid fa-clock"></i>7h30<i class="fa-solid fa-arrow-right"></i>21h</span>
+                                        <span class="location"><i class="fa-solid fa-location-dot"></i>Hồ Chí Minh</span>
+                                    </summary>
+                                    <div class="dropdown-menu">
+                                        <a href="">Hồ Chí Minh</a>
+                                        <a href="">Hà Nội</a>
+                                        <a href="">Đà Nẵng</a>
+                                    </div>
+                                </details>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="img"><img src="../../img/home-du-lich-tq.jpg" alt="" /></div>
+                <div class="container">
+                    <div class="box">
+                        <h1>Trải nghiệm kỳ nghỉ tuyệt vời</h1>
+                        <p>Combo khách sạn - vé máy bay - đưa đón sân bay giá tốt nhất</p>
+                        <div class="search-box">
+                            <details>
+                                <summary>
+                                    <input type="text" placeholder="Bạn muốn đi đâu" />
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </summary>
+                                <div class="dropdown-menu">
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/dalat.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Đà Lạt</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/da-nang-home.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Đà Nẵng</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/hoian.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Hội An</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/nhatrang.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Nha Trang</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/phanthiet.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Phan Thiết</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/phuquoc.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Phú Quốc</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/quynhon.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Quy Nhơn</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/vinh-ha-long.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Vịnh Hạ Long</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item_box">
+                                            <div class="img_box">
+                                                <img src="../../img/vungtau.jpg" alt="" />
+                                            </div>
+                                            <div class="text_box">
+                                                <p>Vũng Tàu</p>
+                                                <p>840 KS</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </details>
+
+                            <details>
+                                <summary class="start-date">
+                                    <a class="calendar-search" href="#">
+                                        <!-- <div class="logo">
+                                            <i class="fa-regular fa-calendar"></i>
+                                        </div> -->
+                                        <div class="text">
+                                            <p>Ngày khởi hành</p>
+                                            <p>Linh hoạt</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="depart">
+                                        <!-- <div class="logo">
+                                            <i class="fa-regular fa-paper-plane"></i>
+                                        </div> -->
+                                        <div class="text">
+                                            <p>Khởi hành từ</p>
+                                            <p>Hồ Chí Minh</p>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="search">Tìm</a>
+                                </summary>
+                                <div class="dropdown-start-date">
+                                    <a href="#">Hồ Chí Minh</a>
+                                    <a href="#">Nha Trang</a>
+                                    <a href="#">Hà Nội</a>
+                                    <a href="#">Cần Thơ</a>
+                                    <a href="#">Đà Lạt</a>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- media -->
+        <section style="background-color: #f6f8fa; padding: 0; margin: 0" class="whyIvivu">
+            <div class="container section-media">
+                <div class="media">
+                    <img width="50px" src="../../img/icon-location.svg" alt="" />
+                    <div class="text">
+                        <strong>1.000+ tours</strong>
+                        <br />
+                        <p>Chất lượng trong và ngoài nước</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img width="50px" src="../../img/icon-review-support.svg" alt="" />
+                    <div class="text">
+                        <strong>10K+ đánh giá 5 sao</strong>
+                        <br />
+                        <p>Từ những khách hàng đã đặt tour</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <img width="50px" src="../../img/icon-payment.svg" alt="" />
+                    <div class="text">
+                        <strong>100+ ưu đãi mỗi ngày</strong>
+                        <br />
+                        <p>Cho khách đặt sớm, theo nhóm, phút chót</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- promotion -->
+        <section class="promotion">
+            <div class="container">
+                <h2 class="title-group">Tour Ưu Đãi Tốt Nhất Hôm Nay</h2>
+                <div class="title-group-sub">Nhanh Tay Đặt Ngay. Để Mai Sẽ Lỡ</div>
+                <div class="row">
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item-img.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName">Tour Châu Âu 5 Nước 10N9Đ: Pháp - Luxembourg - Bỉ - Hà Lan - Đức</a>
+                                </div>
+                                <div class="time-trafic">
+                                    <span><i class="fa-regular fa-clock"></i>10 ngày 9 đêm</span>
+                                    <span><i class="fa-solid fa-plane-up"></i> <i class="fa-solid fa-bus"></i><i class="fa-solid fa-ship"></i></span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Làng Cối Xoay Gió Zaanse Schans</li>
+                                        <li>Làng Giethoorn</li>
+                                        <li>Chiêm Ngưỡng Hoa Tulip</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">49.990.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item2.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Đài Loan 4N3Đ: HCM - Đài Trung - Đầm Cao Mỹ - Hồ Nhật Nguyệt - Thác Thập Phần - Đài Bắc</a
+                                    >
+                                </div>
+                                <div class="time-trafic">
+                                    <span><i class="fa-regular fa-clock"></i> 4 Ngày 3 Đêm </span>
+                                    <span><i class="fa-solid fa-plane-up"></i> <i class="fa-solid fa-bus"></i></span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Tưởng Giới Thạch</li>
+                                        <li>Long Sơn Tự</li>
+                                        <li>Chợ Đêm Phùng Giáp</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">9.990.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item3.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Thái Lan 5N4Đ: Bangkok - Pattaya - Lâu Đài Tỉ Phú - Chùa Bình Minh - Nongnooch Garden</a
+                                    >
+                                </div>
+                                <div class="time-trafic">
+                                    <span><i class="fa-regular fa-clock"></i> 5 Ngày 4 Đêm </span>
+                                    <span><i class="fa-solid fa-plane-up"></i> <i class="fa-solid fa-bus"></i><i class="fa-solid fa-ship"></i></span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Dạo thuyền sông Chaophaya</li>
+                                        <li>Trân Bảo Phật Sơn</li>
+                                        <li>Chùa Bình Minh</li>
+                                        <li>Nongnooch Garden</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">7.390.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item4.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Thái Lan 5N4Đ: Bangkok - Pattaya - Công Viên Khủng Long (Bay Sáng, Trưa)</a
+                                    >
+                                </div>
+                                <div class="score-container-inner">
+                                    <div class="score"><span>8.0</span></div>
+                                    <div class="score-description">
+                                        <span>Rất tốt </span>
+                                    </div>
+                                    <span> | 21 đánh giá </span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Trân Bảo Phật Sơn</li>
+                                        <li>Đảo San Hô</li>
+                                        <li>Vườn Nong Nooch</li>
+                                        <li>Phật Bốn Mặt</li>
+                                    </ul>
+                                </div>
+
+                                <div class="price">
+                                    <div class="price-line">6.890.000 VND</div>
+                                    <span class="vcolor-info">6.690.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item5.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Châu Âu 5 Nước 10N9Đ: Pháp - Luxembourg - Bỉ - Hà Lan - ĐứcTour Trung Quốc 6N5Đ: Khám Phá Lệ Giang - Đại
+                                        Lý - Shangrila (No Shopping)</a
+                                    >
+                                </div>
+                                <div class="score-container-inner">
+                                    <div class="score"><span>8.0</span></div>
+                                    <div class="score-description">
+                                        <span>Rất tốt </span>
+                                    </div>
+                                    <span> | 2 đánh giá </span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Thành Cổ DuKeZong</li>
+                                        <li>Núi Tuyết Ngọc Long</li>
+                                        <li>Khe Hố Nhảy</li>
+                                        <li>Công Viên Hắc Long Đàm</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <div class="price-line">21.990.000 VND</div>
+                                    <span class="vcolor-info">17.990.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item6.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Thái Lan 5N4Đ: Khám Phá Bangkok - Pattaya - Chùa Phật Lớn - Lâu Đài Castello Di Bellagio</a
+                                    >
+                                </div>
+                                <div class="time-trafic">
+                                    <span><i class="fa-regular fa-clock"></i> 5 Ngày 4 Đêm </span>
+                                    <span><i class="fa-solid fa-plane-up"></i> <i class="fa-solid fa-bus"></i></span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Bảo Tàng Art Paradise</li>
+                                        <li>Lâu đài Castello Di Bellagio</li>
+                                        <li>Pattaya Walking Street</li>
+                                        <li>Trân Bảo Phật Sơn</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <div class="price-line">9.990.000 VND</div>
+                                    <span class="vcolor-info">5.390.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-more">
+                    <button class="button-more">Xem thêm tours</button>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: #f6f8fa" class="promotion">
+            <div class="container">
+                <h2 class="title-group">Tour Du Lịch Hành Hương</h2>
+                <div class="title-group-sub">Tìm Về Chốn Thiêng, Lòng Người An Bình</div>
+                <div class="row">
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item7.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName">Tour Yên Tử 2N1Đ: Hà Nội - Yên Tử - Chùa Đồng</a>
+                                </div>
+                                <div class="time-trafic">
+                                    <span><i class="fa-regular fa-clock"></i> 2 Ngày 1 Đêm </span>
+                                    <span> <i class="fa-solid fa-bus"></i><i class="fa-solid fa-ship"></i></span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Tháp Tổ</li>
+                                        <li>Chùa Hoa Yên</li>
+                                        <li>Chùa Ba Vàng</li>
+                                        <li>Thiền Viện Trúc Lâm Yên Tử</li>
+                                        <li>Chùa Đồng</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">1.500.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item8.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName">Tour Ninh Bình Trong Ngày: Hà Nội - Bái Đính - Tràng An</a>
+                                </div>
+                                <div class="score-container-inner">
+                                    <div class="score"><span>9.4</span></div>
+                                    <div class="score-description">
+                                        <span>Tuyệt vời </span>
+                                    </div>
+                                    <span> | 172 đánh giá </span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Chùa Bái Đính</li>
+                                        <li>Tượng Phật Bằng Đồng Lớn Nhất Châu Á</li>
+                                        <li>Bối Cảnh Phim Bom Tấn Kong: Skull Island</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">800.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item9.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Cao Cấp Tây Ninh 2N1Đ (Xe Limousine): Nóc Nhà Nam Bộ - Vinpearl Tây Ninh</a
+                                    >
+                                </div>
+                                <div class="score-container-inner">
+                                    <div class="score"><span>9.4</span></div>
+                                    <div class="score-description">
+                                        <span>Rất tốt </span>
+                                    </div>
+                                    <span> | 3 đánh giá </span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Đệ Nhất Thiên Sơn Núi Bà Đen</li>
+                                        <li>Tòa Thánh Tây Ninh</li>
+                                        <li>Nhà Ga Cáp Treo Lớn Nhất Thế Giới</li>
+                                        <li>Chùa Gò Kén Tây Ninh</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">3.350.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item10.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Côn Đảo 2N2Đ bằng Xe Giường Nằm + Tàu Cao Tốc (cảng Trần Đề, Sóc Trăng)</a
+                                    >
+                                </div>
+                                <div class="score-container-inner">
+                                    <div class="score"><span>7.3</span></div>
+                                    <div class="score-description">
+                                        <span>Khá tốt </span>
+                                    </div>
+                                    <span> | 3 đánh giá </span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Vân Sơn Tự</li>
+                                        <li>Bãi Đầm Trầu</li>
+                                        <li>Nghĩa Trang Hàng Dương</li>
+                                    </ul>
+                                </div>
+
+                                <div class="price">
+                                    <span class="vcolor-info">2.790.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item11.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName">Tour Hà Nội Trong Ngày: Tham quan Chùa Hương</a>
+                                </div>
+                                <div class="score-container-inner">
+                                    <div class="score"><span>9.3</span></div>
+                                    <div class="score-description">
+                                        <span>Tuyệt vời </span>
+                                    </div>
+                                    <span> | 30 đánh giá </span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Thuyền Dọc Theo Suối Yên</li>
+                                        <li>Hành Hương Chùa Thiên Trù</li>
+                                        <li>Linh Thiêng Độc Đáo</li>
+                                        <li>Công Viên Hắc Long Đàm</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">950.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="img">
+                                <img src="../../img/item12.jpg" alt="" />
+                            </div>
+                            <div class="bot">
+                                <div class="text">
+                                    <a href="#" class="cardItemTourName"
+                                        >Tour Tây Ninh Trong Ngày: Núi Bà - Cáp Treo Đỉnh Vân Sơn - Buffet Năm Châu - Tòa Thánh</a
+                                    >
+                                </div>
+                                <div class="score-container-inner">
+                                    <div class="score"><span>9.4</span></div>
+                                    <div class="score-description">
+                                        <span>Tuyệt vời </span>
+                                    </div>
+                                    <span> | 89 đánh giá </span>
+                                </div>
+                                <div class="tourist-destination">
+                                    <ul>
+                                        <li>Núi Bà Đen</li>
+                                        <li>Tòa Thánh Tây Ninh</li>
+                                        <li>Chùa Gò Kén</li>
+                                        <li>Nhà Ga Cáp Treo Lớn Nhất Thế Giới</li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    <span class="vcolor-info">990.000 <small class="textCurrency">VND</small></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-more">
+                    <button class="button-more">Xem thêm tours</button>
+                </div>
+            </div>
+        </section>
+        <!-- Các địa điểm du lịch phổ biến -->
+        <div class="container popular-destination">
+            <h1>Các điểm du lịch phổ biến</h1>
+            <span>Bao La Thế Giới Bốn Bể Là Nhà </span>
+            <div class="layout">
+                <div class="layout-item item1">
+                    <div class="layout-image">
+                        <img
+                            width="100%"
+                            src="https://cdn2.ivivu.com/2017/11/06/10/van-ly-truong-thanh-bia--360x480.jpg"
+                            class="layout-image"
+                            alt=""
+                        />
+                    </div>
+                    <div class="text">
+                        <p>Trung Quốc</p>
+                        <p>138 Tours</p>
+                    </div>
+                </div>
+                <div class="layout-item item2">
+                    <div class="layout-image">
+                        <img
+                            width="100%"
+                            src="https://cdn2.ivivu.com/2022/07/21/13/ivivu-garden-bay-the-bay-360x225.gif"
+                            class="layout-image"
+                            alt=""
+                        />
+                    </div>
+                    <div class="text">
+                        <p>Singapore</p>
+                        <p>138 Tours</p>
+                    </div>
+                </div>
+                <div class="layout-item item3">
+                    <div class="layout-image">
+                        <img width="100%" src="https://cdn2.ivivu.com/2022/05/09/14/ivivu-thap-eiffel-1-360x225.gif" class="layout-image" alt="" />
+                    </div>
+                    <div class="text">
+                        <p>Châu Âu</p>
+                        <p>138 Tours</p>
+                    </div>
+                </div>
+                <div class="layout-item item4">
+                    <div class="layout-image">
+                        <img
+                            width="100%"
+                            src="https://cdn2.ivivu.com/2023/06/30/16/ivivu-chua-binh-minh-wat-arun-360x225.jpg"
+                            class="layout-image"
+                            alt=""
+                        />
+                    </div>
+                    <div class="text">
+                        <p>Thái Lan</p>
+                        <p>138 Tours</p>
+                    </div>
+                </div>
+                <div class="layout-item item5">
+                    <div class="layout-image">
+                        <img width="100%" src="https://cdn2.ivivu.com/2019/11/05/16/ivivu-nui-phu-si2-360x225.jpg" class="layout-image" alt="" />
+                    </div>
+                    <div class="text">
+                        <p>Nhật Bản</p>
+                        <p>138 Tours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="top">
+                    <div class="for_me">
+                        <strong>Về iVIVU.com </strong>
+                        <a href="#">Về chúng tôi</a>
+                        <a href="#">iVIVU Blog</a>
+                        <a href="#">PMS - Miễn phí</a>
+                    </div>
+                    <div class="info_need_know">
+                        <strong> Thông tin cần biết </strong>
+                        <a href="#">Điều kiện & Điều khoản</a>
+                        <a href="#">Quy chế hoạt động</a>
+                        <a href="#">Câu hỏi thường gặp</a>
+                    </div>
+                    <div class="partner">
+                        <strong>Đối tác của chúng tôi</strong>
+                        <a href="../page/insurance/insurance_home.html">Quy chế bảo hiểm Cathay</a>
+                        <a href="../page/insurance/insurance_home.html">Yêu cầu bồi thường Cathay</a>
+                        <a href="../page/insurance/insurance_home.html">Quy chế trả góp</a>
+                    </div>
+                    <div class="member">
+                        <div>
+                            <p>Thành viên của</p>
+                            <strong>Thiên Minh Group</strong>
+                        </div>
+                        <a target="_blank" href="https://tmgroup.vn/"><img src="../../img/tmg_logo.webp" alt="" /></a>
+                    </div>
+                    <div class="certificate">
+                        <div>
+                            <strong>Được chứng nhận</strong>
+                        </div>
+                        <div style="display: flex; gap: 10px">
+                            <a target="_blank" href="http://online.gov.vn/Home/WebDetails/21863"><img src="../../img/bocongthuong.png" alt="" /></a>
+                            <a href="#"><img src="../../img/iata_logo.webp" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="left">
+                        <div class="prize">
+                            <div class="box">
+                                <div class="logo"><img src="../../img/ivv-agency-winner.svg" alt="" /></div>
+                                <div class="text">
+                                    <a target="_blank" href="https://www.worldtravelawards.com/profile-38227-ivivucom"
+                                        >Đại lý Du lịch trực tuyến hàng đầu Việt Nam</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="logo"><img src="../../img/hraa-logo.png" alt="" /></div>
+                                <div class="text">
+                                    <a
+                                        target="_blank"
+                                        href="https://hr.asia/hr-asia-best-companies-to-work-for-in-asia/vietnam-employers-remain-committed-to-employee-engagement/"
+                                        >Nơi làm việc tốt nhất Châu Á</a
+                                    >
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="logo"><img src="../../img/apea.png" alt="" /></div>
+                                <div class="text">
+                                    <a target="_blank" href="https://apea.asia/vietnam/hall-of-fame-vn-2022/">Thương hiệu truyền cảm hứng APEA</a>
+                                </div>
+                            </div>
+                        </div>
+                        <p>DKKD: 0312788481, Ngày cấp: 21/05/2014, Sở kế hoạch đầu tư thành phố Hồ Chí Minh</p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i><strong>HCM</strong>: Tầng 2, Tòa nhà Anh Đăng, 215 Nam Kỳ Khởi Nghĩa, Phường 7,
+                            Quận 3, Tp. Hồ Chí Minh
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i><strong>HN</strong>: P308, Tầng 3, tòa nhà The One, số 2 Chương Dương Độ, P.Chương
+                            Dương, Q.Hoàn Kiếm, Hà Nội
+                        </p>
+                        <p>
+                            <i class="fa-solid fa-location-dot"></i><strong>Cần Thơ</strong>: Tầng 7 - Tòa nhà STS - 11B Đại Lộ Hòa Bình, P. Tân An,
+                            Q. Ninh Kiều, TP. Cần Thơ
+                        </p>
+                    </div>
+                    <div class="right">
+                        <strong>Bạn cần trợ giúp? Hãy gọi ngay! </strong>
+
+                        <div class="phone">
+                            <a href="#"><i class="fa-solid fa-phone"></i> 1900 1870</a>
+                        </div>
+                        <div><a href="#" class="advise">Tư vấn với Olivia - chatbot của iVIVU</a></div>
+                        <strong>Đặt phòng dễ dàng hơn qua ứng dụng iVIVU </strong>
+                        <div class="download">
+                            <div class="qr_code">
+                                <img src="../../img/iVIVUcode.png" alt="" />
+                            </div>
+                            <div class="application">
+                                <img src="../../img/tai-appstore.png" alt="" />
+                                <img src="../../img/tai-google-play.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
